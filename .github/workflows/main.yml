@@ -1,7 +1,6 @@
 name: Manual Approval
 
-on: 
-  push:
+on: workflow_dispatch
 
 jobs:
   approval:

@@ -14,7 +14,7 @@ jobs:
         uses: trstringer/manual-approval@v1
         with:
           secret: ${{ github.TOKEN }}
-          approvers: technokarthyk, gowtham0045
+          approvers: gowtham0045
           exclude_workflow_initiator: false
 
       - name: Checkout Repository

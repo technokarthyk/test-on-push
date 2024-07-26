@@ -1,19 +1,19 @@
 name: Manual Approval
 
 on: 
- push:
-   branches:
+  push:
+    branches:
       - main
 
 jobs:
   approval:
     runs-on: ubuntu-latest
 
-        
     steps:
-      - uses: trstringer/manual-approval@v1
+      - name: Manual Approval
+        uses: trstringer/manual-approval@v1
         with:
-          secret: ${{ github.TOKEN }}
+          secret: ${{ secrets.GITHUB_TOKEN }}
           approvers: Gowtham0045
           minimum-approvals: 1
           issue-title: "Deploying v1.3.5 to prod from staging"

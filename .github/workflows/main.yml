@@ -15,7 +15,7 @@ jobs:
         with:
           secret: ${{ github.TOKEN }}
           approvers: gowtham0045
-          exclude_workflow_initiator: false
+          #exclude_workflow_initiator: false
 
       - name: Checkout Repository
         uses: actions/checkout@v2    
